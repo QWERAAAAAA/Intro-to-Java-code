@@ -21,6 +21,7 @@ public class TestMax {
 		int i = 5, j = 2;
 		int k = max(i,j);
 		System.out.println("The maximum of " + i + " and " + j + " is " + k);
+		max(3,4);	// 对返回值类型为void的方法的调用总是单独的一条语句，但是对带返回值类型的方法的调用本身不能作为一条语句。错误。返回值可以不接收
 	}
 	
 	public static int max(int num1, int num2) {
